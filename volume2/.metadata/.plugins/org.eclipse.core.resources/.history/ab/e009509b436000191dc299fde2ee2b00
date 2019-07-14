@@ -1,0 +1,13 @@
+package test;
+import java.util.*;
+public class Test01 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the no . : ");
+		int eno=scn.nextInt();
+		scn.nextLine();
+		System.out.println("enter the name :  ");
+		String ename=scn.nextLine();
+		System.out.println(eno+"\t"+ename);
+	}
+}

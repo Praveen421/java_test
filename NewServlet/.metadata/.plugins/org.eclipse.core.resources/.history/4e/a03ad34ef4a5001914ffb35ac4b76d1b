@@ -1,0 +1,30 @@
+package logical;
+import java.util.*;
+public class HackerRank3 {
+
+	public static void main(String[] args) {
+		//double a=0,b=2,n=10;
+		double sum=0;
+		Scanner scn=new Scanner(System.in);
+		System.out.println(" ");
+		int iteration=scn.nextInt();
+		double[] a=new double[iteration];
+		double[] b=new double[iteration];
+		double[] n=new double[iteration];
+		/*for(int i=0;i<n;i++) {
+			sum=sum+a+b*Math.pow(2, i); 
+			System.out.print((int)sum+" ");
+		}*/		
+		
+		for(int i=0;i<iteration;i++) {
+			a[i]=scn.nextDouble();
+			b[i]=scn.nextDouble();
+			n[i]=scn.nextDouble();
+		}
+		for(int i=0;i<n[i]-1;i++) {
+			sum=sum+a[i]+b[i]*Math.pow(2, i);
+			System.out.print((int)sum+" ");
+		}
+	}
+
+}

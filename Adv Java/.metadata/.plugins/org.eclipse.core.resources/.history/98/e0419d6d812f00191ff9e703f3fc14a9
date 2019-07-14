@@ -1,0 +1,20 @@
+package core;
+class A19{
+	static int a =10;
+	int x = 20;
+}
+class B19 extends A19{
+	static int b = 30;
+	int y = 40;
+}
+class C19 extends B19{
+	
+}
+public class CCT {
+	static void m1(byte b) {
+		System.out.println("byte arg");
+	}
+	public static void main(String[] args) {
+		
+	}
+}

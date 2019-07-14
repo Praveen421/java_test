@@ -1,0 +1,15 @@
+package test;
+import java.util.*;
+public class Company {
+	public static void main(String[] args) {
+		Customer c1=new Customer("praveen","VNS","STAR PLUS",101);
+		Customer c2=new Customer("praveen","VNS","STAR PLUS",101);
+		Customer c3=new Customer("praveen","VNS","STAR PLUS",101);
+		Customer c4=new Customer("praveen","VNS","STAR PLUS",101);
+		Customer c5=new Customer("praveen","VNS","STAR PLUS",101);
+		ArrayList<Customer> al=new ArrayList<>();
+		al.add(c1);
+		al.add(c2);
+		System.out.println(al);
+	}
+}

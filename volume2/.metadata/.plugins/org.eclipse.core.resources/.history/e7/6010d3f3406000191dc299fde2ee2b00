@@ -1,0 +1,11 @@
+package test;
+import java.util.*;
+public class Test02 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter three integers : ");
+		System.out.println(scn.nextLine());
+		System.out.println(scn.nextLine());
+		System.out.println(scn.nextLine());
+	}
+}

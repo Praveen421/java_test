@@ -1,0 +1,15 @@
+import java.io.*;
+class FileCopyDemo{
+
+	public static void main(String[] args)
+		throws FileNotFoundException,IOException{
+		FileInputStream fis=new FileInputStream("output.text");
+		FileOutputStream fos=new FileOutputStream("test.text");
+		int data;
+		while((data=fis.read())!=-1){
+			fos.write(data);
+		}
+		fis.close();
+		fos.close();
+    }
+}

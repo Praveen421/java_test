@@ -1,0 +1,12 @@
+package SCode;
+import java.util.regex.*;
+import java.util.regex.Pattern;
+public class PasswordTest {
+	public static void main(String[] args) {
+		Pattern p=Pattern.compile("[a-z|(A-Z0)+(0-9)+] {9}");
+		Matcher m=p.matcher("praveeN11");
+		if(m.find()) {
+			System.out.println("valid password ");
+		}
+	}
+}

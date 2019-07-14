@@ -1,0 +1,20 @@
+package exceptionHandling0;
+import java.util.*;
+import java.io.*;
+public class NormalExecution {
+	public static void main(String[] args) throws IOException {
+		Scanner scn=new Scanner(System.in);
+		int a;
+		while(true) {
+			try {
+				System.out.println("enter the first no. : ");
+				a=scn.nextInt();
+				break;
+			}
+			catch(InputMismatchException e) {
+				System.out.println("enter non-zero no. "); 
+			}
+		}
+		
+	}
+}

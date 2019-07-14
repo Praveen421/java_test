@@ -1,0 +1,20 @@
+package exceptionHandling0;
+import java.util.*;
+import java.io.*;
+public class NormalExecution {
+	public static void main(String[] args) throws IOException {
+		int a;
+		int b;
+		try {
+			while(true) {
+				Scanner scn=new Scanner(System.in);
+				System.out.println("enter first no. : ");
+				a=scn.nextInt();
+				break;
+			}
+		}
+		catch(NumberFormatException e) {
+			System.out.println("only integers");
+		}
+	}
+}

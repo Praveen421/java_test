@@ -1,0 +1,20 @@
+package stringhandling;
+import java.util.*;
+public class StringLength {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the string : ");
+		String s1=scn.nextLine();
+		int lenght=FindLength.findLength(s1);
+		
+	}
+}
+class FindLength1{
+		public static int findLength(String s1) {
+			int count=0;
+			for(int i=0;s1.charAt(i)!='\0';i++) {
+				count++;
+			}
+			return count;
+	}
+}

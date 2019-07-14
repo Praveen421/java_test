@@ -1,0 +1,10 @@
+package Nitra;
+
+public class NITCollection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

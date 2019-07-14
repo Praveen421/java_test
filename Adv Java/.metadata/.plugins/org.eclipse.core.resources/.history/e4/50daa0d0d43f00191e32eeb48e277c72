@@ -1,0 +1,14 @@
+package exceptionHandling0;
+import java.util.*;
+public class NormalExecution {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter value of a:  ");
+		int a=scn.nextInt();
+		System.out.println("enter value of b:  ");
+		int b=scn.nextInt();
+		System.out.println("value of a : "+a);
+		System.out.println("value of b : "+b);
+		System.out.println(a/b);
+	}
+}

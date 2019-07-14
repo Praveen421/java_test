@@ -1,0 +1,9 @@
+package test02;
+import java.util.*;
+public class Test_split {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		String s1="hari NIT";
+		System.out.println(s1);
+	}
+}

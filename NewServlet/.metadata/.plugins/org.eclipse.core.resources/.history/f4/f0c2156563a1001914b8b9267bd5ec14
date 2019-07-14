@@ -1,0 +1,11 @@
+package SCode;
+import java.util.regex.*;
+public class RegularExpression {
+	public static void main(String[] args) {
+		Pattern p=Pattern.compile("ab");
+		Matcher m=p.matcher("ababbabab");
+		while(m.find()) {
+			System.out.println(m.start()+"..."+m.end()+"..."+m.group());
+		}
+	}
+}

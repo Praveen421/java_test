@@ -1,0 +1,11 @@
+package stringTest;
+import java.util.*;
+public class DuplicateTest3 {
+	public static void main(String[] args) {
+		String s="aa ab bb bccdsdse df ffd dss";
+		String s1=s.replaceAll(" ", "");
+		HashMap<Character,Integer> hm=new HashMap<Character,Integer>();
+		System.out.println(s);
+		System.out.println(s1);
+	}
+}

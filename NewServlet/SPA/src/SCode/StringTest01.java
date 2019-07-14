@@ -1,0 +1,26 @@
+package SCode;
+import java.util.*;
+public class StringTest01 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String : ");
+		String s=scn.nextLine();
+		String[] sa=s.split(" ");
+		System.out.println(Arrays.toString(sa));
+		int[] a= new int[sa.length];
+		for(int i=0;i<sa.length;i++) {
+			a[i]=sa[i].length();
+		}
+		System.out.println(Arrays.toString(a));
+		for(int i=0;i<sa.length-1;i++) {
+			for(int j=i+1;j<sa.length;j++) {
+				if(sa[i].length()>sa[j].length()) {
+				String temp=sa[i];  
+				sa[i]=sa[j];
+				sa[j]=temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(sa)); 
+	}
+}

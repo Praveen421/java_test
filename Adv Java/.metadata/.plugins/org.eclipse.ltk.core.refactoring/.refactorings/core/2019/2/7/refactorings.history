@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Driver2.java&apos; to &apos;Core1/src/com.nt.test&apos;&#x0D;&#x0A;- Original project: &apos;core&apos;&#x0D;&#x0A;- Destination element: &apos;Core1/src/com.nt.test&apos;&#x0D;&#x0A;- Original element: &apos;core.Driver2.java&apos;" description="Copy compilation unit" destination="=Core1/src&lt;com.nt.test" element1="/src&lt;core{Driver2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1549969480534" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,21 @@
+package logical;
+import java.util.*;
+public class Permncom {
+	static int fact(int n) {
+		int res=1;
+		if(n==1) {
+			return n;
+		}else {
+			return res=n*fact(n-1); 
+		}
+	}
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter N and R : ");
+		int n=scn.nextInt();
+		int r=scn.nextInt();
+		
+		System.out.println("factorial of "+n+"="+fact(n)+"...."+r+"="+fact(r));
+	}
+
+}

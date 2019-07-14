@@ -1,0 +1,13 @@
+package logical;
+import java.util.*;
+public class HackerRank1 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		
+		String s="hi";
+		Integer i=10;
+		double d=3.145;
+		System.out.println(s.getClass().getSimpleName());
+		System.out.println(i.getClass().getSimpleName());
+	}
+}

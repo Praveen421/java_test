@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+   <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>test.LoginServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/log</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>AdminLoginServlet</servlet-name>
+      <servlet-class>test.AdminLoginServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>AdminLoginServlet</servlet-name>
+      <url-pattern>/adminlog</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>AddBookServlet</servlet-name>
+      <servlet-class>test.AddBookServlet</servlet-class>
+      
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>AddBookServlet</servlet-name>
+      <url-pattern>/addbook</url-pattern>
+   </servlet-mapping>     
+    
+   <servlet>
+      <servlet-name>UpdateBooksServlet</servlet-name>
+      <servlet-class>test.UpdateBooksServlet</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+      <servlet-name>UpdateBooksServlet</servlet-name>
+      <url-pattern>/updates</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>ViewBookServlet</servlet-name>
+      <servlet-class>test.ViewBookServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ViewBookServlet</servlet-name>
+      <url-pattern>/view</url-pattern> 
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>UserLoginServlet</servlet-name>
+      <servlet-class>test.UserLoginServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UserLoginServlet</servlet-name>
+      <url-pattern>/userlog</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>ViewBookServlet2</servlet-name>
+      <servlet-class>test.ViewBookServlet2</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ViewBookServlet2</servlet-name>
+      <url-pattern>/view1</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>RegServlet1</servlet-name>
+      <servlet-class>test.RegServlet1</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>RegServlet1</servlet-name>
+      <url-pattern>/reg1</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>RegServlet2</servlet-name>
+      <servlet-class>test.RegServlet2</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>RegServlet2</servlet-name>
+      <url-pattern>/reg2</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>ViewDetailsServlet</servlet-name>
+      <servlet-class>test.ViewDetailsServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ViewDetailsServlet</servlet-name>
+      <url-pattern>/vdetails</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+      <servlet-name>FinalRegServlet</servlet-name>
+      <servlet-class>test.FinalRegServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>FinalRegServlet</servlet-name>
+      <url-pattern>/reg</url-pattern>
+   </servlet-mapping>
+     
+   
+   <welcome-file-list>
+      <welcome-file>Login.html</welcome-file>
+   </welcome-file-list>
+</web-app>

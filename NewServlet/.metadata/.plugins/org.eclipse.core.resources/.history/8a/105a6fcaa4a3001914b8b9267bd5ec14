@@ -1,0 +1,32 @@
+package SCode;
+import java.util.*;
+public class CompanyTest {
+	static int count(int no) {
+		int count=0;
+		while(no!=0) {
+			no=no/10;
+			count++;			
+		}
+		return count;
+	}
+	static int m1(int no) {
+		int sum=0;
+		int a=0;
+		while(a!=0) {
+			a=no%10;
+			no=no/10;
+			sum=sum+a;
+			if(count(sum)>1) {
+				m1(sum);
+			}
+		}
+		return sum;
+	}
+	public static void main(String[] args) {
+		Random r=new Random();		
+		int a=10+r.nextInt(100000);
+		System.out.print(a+"\t\t"+count(a));
+		System.out.println("the single digit sum is : "+m1(a));
+		
+	}
+}

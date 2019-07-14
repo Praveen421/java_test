@@ -1,0 +1,12 @@
+package test02;
+import java.util.*;
+public class Test_join {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the string : ");
+		String s=scn.nextLine();
+		System.out.println(s);
+		String s1=s.join(" ", "abc");
+		System.out.println(s1);
+	}
+}

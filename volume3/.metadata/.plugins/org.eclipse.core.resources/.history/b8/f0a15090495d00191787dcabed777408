@@ -1,0 +1,24 @@
+package test;
+public class Customer {
+	private String cname,adress,channel;
+	private int id;
+	public Customer(String cname, String adress, String channel, int id) {
+		
+		this.cname = cname;
+		this.adress = adress;
+		this.channel = channel;
+		this.id = id;
+	}
+	@Override
+	public int hashCode() {
+		return ChannelCode.getCcode(channel); 
+	}
+	@Override
+	public boolean equals(Object obj) {		
+		if(obj instanceof Customer) {
+			Customer c=(Customer)obj;
+			return this.channel.equals(c.channel)&&this.id==c.id;   
+		}
+		return false; 
+	}
+}

@@ -1,0 +1,17 @@
+package frustate;
+import java.util.*;
+public class StringTest01 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("===================");
+		for(int i=0;i<3;i++) {
+			String s=scn.next();
+			int j=scn.nextInt();
+			for(int k=0;k<s.length()-j;k++) {
+				System.out.print(" "+j);
+			}
+		}
+		System.out.println("===================");
+	}
+
+}

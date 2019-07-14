@@ -1,0 +1,16 @@
+package SCode;
+import java.util.*;
+public class StringTest02 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String : ");
+		String s=scn.nextLine();
+		String[] sa=s.split(" ");
+		System.out.println(Arrays.toString(sa));
+		TreeMap<Integer,String> ts=new TreeMap<>();
+		for(int i=0;i<sa.length;i++) {
+			ts.put(sa[i].length(), sa[i]);
+		}
+		System.out.println(ts);
+	}
+}

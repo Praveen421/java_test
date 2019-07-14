@@ -1,0 +1,21 @@
+package companyData;
+import java.sql.*;
+public class BatchTest {
+
+	public static void main(String[] args) throws SQLException,ClassNotFoundException	{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "1234");
+		Statement stm=con.createStatement();
+		stm.addBatch("insert into emp values (1025,'rishab','clerk',7499,'20-DEC-80',5000,200,20)");
+		stm.addBatch("insert into emp values (1026,'diksha','manager',7699,'21-DEC-80',3500,100,30)");
+		stm.addBatch("commit");
+		int k[]=stm.executeBatch();
+		
+		for(int i=0;i<k.length;i++) {
+			System.out.println((i+1)+"row updated ");
+		}
+		stm.clearBatch();
+		con.close();
+	}
+
+}

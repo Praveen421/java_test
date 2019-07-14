@@ -1,0 +1,19 @@
+package w3resourcestest;
+import java.util.*;
+public class CollectionTest {
+	public static void main(String[] args) {
+		ArrayList<String> al=new ArrayList<>();
+		al.add("praveen");
+		al.add("Dipak");
+		al.add("Pinku");
+		al.add("Pranab");
+		al.add("Gautam");
+		al.add("Rahul");
+		al.add(0, "element");
+		al.add(1, "first");
+		System.out.println(al);
+		for(String s : al) {
+			System.out.println(s+"\t");
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package test02;
+public class Test_trim {
+	public static void main(String[] args) {
+		String s1="    cha   na   dan   ";
+		System.out.println(s1.trim().length());
+		String s2=s1.replace(" ", "k");
+		System.out.println(s2);
+		String s3=s1.replaceFirst(" ", "");
+		System.out.println(s3);
+	}
+}

@@ -1,0 +1,19 @@
+package SCode;
+import java.util.*;
+public class ReverseRecursion {
+	static String rev(String s1) {
+		if(s1.length()<=1) {
+			return s1;
+		}else {
+			return rev(s1.substring(1, s1.length()))+s1.charAt(0);
+		}
+	}
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the string :");
+		String s=scn.nextLine();
+		System.out.println(rev(s));
+		s.substring(1, s.length());
+		System.out.println(s+s.charAt(0));
+	}
+}

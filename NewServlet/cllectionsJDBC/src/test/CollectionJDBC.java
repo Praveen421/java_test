@@ -1,0 +1,40 @@
+package test;
+import java.sql.*;
+import java.util.*;
+public class CollectionJDBC {
+	public static void main(String[] args)
+	throws ClassNotFoundException,SQLException{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "1234");
+		
+		ArrayList<Product> al=new ArrayList<>();
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the pID : ");
+		int Pid=Integer.parseInt(scn.nextLine());
+		PreparedStatement ps=con.prepareStatement("select * from Product_Table where pid=?");
+		ps.setInt(1, Pid);
+		ResultSet rs=ps.executeQuery();
+		while(rs.next()) {
+			Product p1=new Product();
+			p1.setpID(rs.getInt(1));
+			p1.setpName(rs.getString(2));
+			p1.setpPrice(rs.getInt(3));
+			p1.setpQty(rs.getInt(4));
+			p1.setPtax(rs.getInt(5));
+			al.add(p1);
+		}
+		System.out.println("===Display from JCF Object (Iterator<E>)===");
+		Iterator<Product> it=al.iterator();
+		while(it.hasNext()) {
+			Product p=(Product)it.next();
+			System.out.println(p.getpID()+" - "+p.getpName()+" - "+p.getpPrice()+" - "+p.getpQty()+" - "+p.getPtax());
+		}
+		System.out.println("\n");
+		System.out.println("===Display from forEach()===");
+		al.forEach((z)->
+		{
+			Product p=(Product)z;
+			System.out.println(p.getpID()+"\t\t"+p.getpName()+"\t\t"+p.getpPrice()+"\t\t"+p.getpQty()+"\t\t"+p.getPtax());
+		});
+	}
+}

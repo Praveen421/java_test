@@ -1,0 +1,9 @@
+package SCode;
+import java.util.*;
+public class CompanyTest {
+	public static void main(String[] args) {
+		Random r=new Random();
+		int a=10+r.nextInt(100000);
+		System.out.println(a);
+	}
+}

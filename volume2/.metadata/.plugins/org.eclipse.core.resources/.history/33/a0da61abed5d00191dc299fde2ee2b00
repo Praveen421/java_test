@@ -1,0 +1,26 @@
+package test01;
+import java.util.*;
+public class Test03 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the name : ");
+		String s0=scn.nextLine();
+		while(true) {
+			System.out.println("enter the password : ");
+			String s=scn.nextLine();
+			if(s.isEmpty()) {
+				System.out.println("password cant be empty");
+				continue;
+			}else {
+				if(s.length()<8||s.length()>16) {
+					System.out.println("password length is to short or big ");
+					continue;
+				}
+				else {
+					System.out.println("welcome :   "+s0);
+					System.out.println("login successfull your password is : "+s);
+				}
+			}
+		}
+	}
+}

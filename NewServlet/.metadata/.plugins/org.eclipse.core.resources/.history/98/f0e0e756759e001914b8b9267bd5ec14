@@ -1,0 +1,13 @@
+package SCode;
+import java.util.*;
+public class StringTest {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String : ");
+		String s=scn.nextLine();
+		String[] sa=s.split(" ");
+		System.out.println(Arrays.toString(sa));
+		System.out.println(sa[0]);
+	}
+
+}

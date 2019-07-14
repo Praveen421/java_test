@@ -1,0 +1,18 @@
+package SCode;
+import java.util.*;
+public class StringTest {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String : ");
+		StringBuffer sb0=new StringBuffer(scn.nextLine());
+		StringBuffer sb1=sb0.reverse();
+		String s0=sb0.toString();
+		String s1=sb1.toString();
+		String[] sa1=s0.split(" ");
+		String[] sa2=s1.split(" ");
+		
+		System.out.println(Arrays.toString(sa1));
+		System.out.println(Arrays.toString(sa2));
+	}
+
+}

@@ -1,0 +1,10 @@
+package SCode;
+import java.util.*;
+public class TestCollection {
+	public static void main(String[] args) {
+		HashMap<String,Integer> hm=new HashMap<>();
+		hm.put("CJ", 1);
+		hm.put("hadoop", 2);
+		System.out.println(hm);
+	}
+}

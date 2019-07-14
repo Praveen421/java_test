@@ -1,0 +1,12 @@
+
+Jun 15, 2019 23:11:40.64 NEW SESSION
+Jun 15, 2019 23:11:40.64 [8272:1560:0615/231140.626:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+Jun 15, 2019 23:12:01.46 [8272:1560:0615/231201.460:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+Jun 15, 2019 23:12:15.02 [8272:10556:0615/231215.029:ERROR:account_tracker.cc(240)] AccessTokenFetched error: Connection failed (-106).
+Jun 15, 2019 23:12:41.79 [8272:1560:0615/231241.791:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+Jun 15, 2019 23:14:08.29 [8272:1560:0615/231408.291:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+Jun 15, 2019 23:14:55.71 [8272:10556:0615/231455.719:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+Jun 15, 2019 23:14:56.29 [8272:1560:0615/231456.297:ERROR:browser_process_sub_thread.cc(217)] Waited 347 ms for network service
+Jun 16, 2019 14:36:20.69 [4576:7900:0616/143620.689:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+Jun 16, 2019 14:36:29.95 [4576:11716:0616/143629.958:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+Jun 16, 2019 14:36:30.60 [4576:7900:0616/143630.600:ERROR:browser_process_sub_thread.cc(217)] Waited 413 ms for network service

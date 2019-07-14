@@ -1,0 +1,27 @@
+package stringTest;
+import java.util.*;
+public class DuplicatesCount {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String :  ");
+		String s=scn.nextLine();
+		String[] ch=s.split("");
+		System.out.println(Arrays.toString(ch));		
+		int count;
+		for(int i=1;i<ch.length;) {
+			count=m1(ch,1,1);
+			if(count>1) {
+				System.out.println(" "+ch[i]+" comes  "+count+"  times");
+				i=i+count;
+			}
+			else i++;
+		}
+	}
+
+	public static int m1(String[] ca, int j, int times) {		
+		if(ca[j-1].equals(ca[j])) {
+			times=times+m1(ca,++j,times);
+		}
+		return times;
+	}
+}

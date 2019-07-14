@@ -1,0 +1,6 @@
+package dataTypes;
+public class InsatanceOfTest01 {
+	public static void main(String[] args) {
+		
+	}
+}

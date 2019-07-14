@@ -1,0 +1,37 @@
+package core;
+class A19{
+	static int a =10;
+	int x = 20;
+}
+class B19 extends A19{
+	static int b = 30;
+	int y = 40;
+}
+public class CCT {
+	static void m1(byte b) {
+		System.out.println("byte arg");
+	}
+	public static void main(String[] args) {
+		//A19 a1 = new A19();
+		//System.out.println("A a1.x : "+a1.x);
+		//A19 a1 = new B19();
+		//System.out.println("A a2.x : "+a2.x);
+		//B19 b1 = new A19(); //CE: cannot convert A to B
+		//B19 b1 = new B19();
+		A19 a1 = new B19();
+		//System.out.println(((B19)a1).y);  //down casting
+		//A19 a1 = new A19();
+		//B19 b1 = (B19)a1;  // ClassCastException
+		
+		//m1((byte)50);
+		//B19 b1=(B19)a1;
+		//System.out.println("b1.y : "+b1.y);
+		A19 a2=new B19();
+		if(a2 instanceof B19) {
+			B19 b2=(B19)a2;
+			System.out.println("b2.y : "+b2.y);
+		}else {
+			System.out.println("false");
+		}
+	}
+}

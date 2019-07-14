@@ -1,0 +1,12 @@
+package logical;
+import java.util.*;
+public class HackerRank2 {
+
+	public static void main(String[] args) {
+		int a=15;
+		System.out.printf("%*c",a,' ');
+		System.out.println("pravleen");
+
+	}
+
+}

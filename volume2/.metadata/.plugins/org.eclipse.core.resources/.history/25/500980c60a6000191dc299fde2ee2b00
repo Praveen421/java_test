@@ -1,0 +1,13 @@
+package test02;
+import java.util.*;
+public class Test_split {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		String s1="hari NIT";
+		System.out.println(s1);
+		String[] sa1=s1.split(" ");
+		System.out.println(sa1);
+		System.out.println(sa1.length);
+		System.out.println(Arrays.toString(sa1));
+	}
+}

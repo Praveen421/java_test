@@ -1,0 +1,21 @@
+package SCode;
+import java.util.*;
+public class FibonacciRecursion {
+	static int a=0,b=0,sum=0,i,n;
+	static void m1(int p,int q) {		
+		sum=a+b;
+		System.out.print(a+b);
+		a=++b;
+		b=sum;
+		i++;
+		if(i<n) {
+			m1(a,b);
+		}		
+	}
+	public static void main(String[] args) {	
+		Scanner scn=new Scanner(System.in);		
+		System.out.println("enter the no . : ");
+		int n=scn.nextInt();
+		m1(a,b);
+	}
+}

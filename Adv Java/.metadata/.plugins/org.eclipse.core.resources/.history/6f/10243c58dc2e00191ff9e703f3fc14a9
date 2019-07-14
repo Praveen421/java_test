@@ -1,0 +1,43 @@
+package core;
+
+abstract class Vehicle{
+	abstract start();
+	abstract move();
+	abstract stop();
+}
+class Bus extends Vehicle{
+	start(){
+		System.out.println("Bus start");
+	}
+	move(){
+		System.out.println("Bus moving");
+	}
+	stop(){
+		System.out.println("Bus stop");
+	}
+}
+class Car extends Vehicle{
+	start(){
+		System.out.println("Car start");
+	}
+	move(){
+		System.out.println("Car moving");
+	}
+	stop(){
+		System.out.println("Car stop");
+	}
+}
+class Driver{
+	void drive(Vehicle v) {
+		v.start();
+		v.move();
+		v.stop();
+	}
+}
+public class DepoManager {
+	public static void main(String[] args) {
+		Driver d1= new Driver();
+		d1.drive(new Bus());
+		d1.drive(new Car());
+	}
+}

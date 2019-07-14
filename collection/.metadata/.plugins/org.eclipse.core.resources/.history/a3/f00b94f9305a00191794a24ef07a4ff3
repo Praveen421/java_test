@@ -1,0 +1,9 @@
+package UniversityHelper;
+import java.util.HashMap;
+public class Course {
+	
+   public static int getCourseNUM(String course) {		
+		return CourseMap.get(course); 
+		
+	}
+}

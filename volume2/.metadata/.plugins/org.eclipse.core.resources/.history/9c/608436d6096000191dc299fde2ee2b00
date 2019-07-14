@@ -1,0 +1,11 @@
+package test02;
+import java.util.*;
+public class Test_split {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the string  : ");
+		String s1=scn.nextLine();
+		s1.split(" ");
+		System.out.println(s1);
+	}
+}

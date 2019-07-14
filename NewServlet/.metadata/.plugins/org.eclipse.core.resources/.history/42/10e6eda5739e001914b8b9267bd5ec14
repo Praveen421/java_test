@@ -1,0 +1,11 @@
+package SCode;
+import java.util.*;
+public class StringTest {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		String s=scn.nextLine();
+		String[] sa=s.split(" ");
+		System.out.println(sa);
+	}
+
+}

@@ -1,0 +1,8 @@
+package dataTypes;
+public class InsatanceOfTest01 {
+	public static void main(String[] args) {
+		A a=new B();
+		
+		System.out.println(a instanceof A);
+	}
+}

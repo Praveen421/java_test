@@ -1,0 +1,22 @@
+package test02;
+public class intern_Test {
+	public static void main(String[] args) {
+		String s1="Hari";
+		String s2=s1.intern();
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s1==s2);
+		System.out.println();
+		
+		String s3=new String("Hari");
+		String s4=s3.intern();
+		String s5="Hari";
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s3==s4);
+		System.out.println(s3==s5);
+		System.out.println();
+		
+		
+	}
+}

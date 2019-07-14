@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestAB18",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TestAB18",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestAB19",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TestAB19",
+            "args": ""
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+package stringTest;
+import java.util.*;
+public class Test1 {
+	public static void main(String[] args) {
+		ArrayList<Byte> al=new ArrayList<>();
+		for(byte i=67;i<97;i++) {
+			al.add(i);
+		}
+		System.out.println(al);
+	}
+}

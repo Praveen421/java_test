@@ -1,0 +1,9 @@
+package stringhandling;
+public class IndexLastIndexofTest {
+	public static void main(String[] args) {
+		String s1="java programming Language";
+		System.out.println(s1.length());
+		
+		System.out.println(s1.indexOf('p'));
+	}
+}

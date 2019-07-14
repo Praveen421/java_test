@@ -1,0 +1,11 @@
+package test;
+import java.util.*;
+public class Test01 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the string and no. : ");
+		String s=scn.nextLine();
+		int i=scn.nextInt();
+		System.out.println("text : "+s+"\tno .   "+i);
+	}
+}

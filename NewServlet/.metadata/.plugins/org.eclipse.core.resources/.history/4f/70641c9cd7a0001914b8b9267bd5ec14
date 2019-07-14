@@ -1,0 +1,16 @@
+package SCode;
+import java.util.*;
+public class StringTest01 {
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the String : ");
+		String s=scn.nextLine();
+		String[] sa=s.split(" ");
+		System.out.println(Arrays.toString(sa));
+		int[] a= {0};
+		for(int i=0;i<sa.length;i++) {
+			a[i]=sa[i].length();
+		}
+		System.out.println(a);
+	}
+}

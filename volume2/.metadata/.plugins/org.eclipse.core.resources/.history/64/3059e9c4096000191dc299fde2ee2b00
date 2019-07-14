@@ -1,0 +1,10 @@
+package test02;
+
+public class Test_split {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

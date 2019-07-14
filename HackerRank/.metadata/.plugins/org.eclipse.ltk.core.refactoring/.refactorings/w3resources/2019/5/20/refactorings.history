@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;distinct&apos; in &apos;stringTest.DuplicatesTest1.main(...)&apos; to &apos;count&apos;&#x0D;&#x0A;- Original project: &apos;w3resources&apos;&#x0D;&#x0A;- Original element: &apos;stringTest.DuplicatesTest1.main(String[]).distinct&apos;&#x0D;&#x0A;- Renamed element: &apos;distinct&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;distinct&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;stringTest{DuplicatesTest1.java[DuplicatesTest1~main~\[QString;@distinct!233!247!237!244!I!0!false" name="count" references="true" stamp="1557645835662" version="1.0"/>
+</session>
